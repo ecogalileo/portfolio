@@ -15,6 +15,32 @@
   <!-- Custom CSS file -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-color: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+</style>
 <body>
 <!--======================= Navigation Bar =========================================-->
   <nav class="navbar navbar-light fixed-top bg-transparent shadow-sm">
@@ -196,7 +222,7 @@
       </div>
     </div>
     <div class="container mb-5" style="width: auto; height: auto;">
-      <div id="carouselExampleDark" class="carousel carousel-white slide mb-5" data-bs-ride="carousel">
+      <div id="carouselExampleDark" class="carousel slide mb-5" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -308,9 +334,10 @@
       </div>
       <div class="modal-body" style="margin-left: 10%; margin-right: 8%;">
         <img src="img/portfolio/3.png" class="p-1 w-100 border border-5 border-dark" alt="portfolio item">
-        <h3 class="text-center text-uppercase mt-3 mb-5">Our first System project in college days</h3>
-        <p class="text-muted">We made this project in the college days this system is called birthing clinic system the features of this system is adding patient
-          information edit patient information, deleting patient information and reading patient information and also the main page have a log in page.
+        <h3 class="text-center text-uppercase mt-3 mb-5">Our first Web Application project in college days</h3>
+        <p class="text-muted">We made this project in the college days. this Web Application is called birthing clinic system that stores data patient information the features of this system is adding patient
+          information edit patient information, deleting patient information and reading patient information and also the main page have a log in page. I use Html, Css, Javascript, Jquery, Php and Mysql
+          to create this web application and i use the template of AdminLTE template because it is simple layout and user friendly layout.
         </p>
       </div>
       <div class="modal-footer">
@@ -329,7 +356,8 @@
         <img src="img/portfolio/2.jpg" class="p-1 w-100 border border-5 border-dark" alt="portfolio item">
         <h3 class="text-center text-uppercase mt-3 mb-5">My second Vector art</h3>
         <p class="text-muted">This is my second vector art that i created in the photoshop it's good enough for me and this vector art is for my cousin because he request
-           to me to make vector of his face and to post in the social media.
+           to me to make vector of his face and to post in the social media. This vector art it took me 3 days to finish this vector art because it is hard for me to draw his
+           face using pen tool but it is worth it to me because it is good creation of my vector art.
 
         </p>
       </div>
@@ -367,7 +395,7 @@
         <img src="img/portfolio/5.png" class="p-1 w-100 border border-5 border-dark" alt="portfolio item">
         <h3 class="text-center text-uppercase mt-3 mb-5">JEG Resources website</h3>
         <p class="text-muted">This is our project website in the KODEGO bootcamp. I design the website and put some contents and parallax effect of our website and the other
-           member layout the webpages and put some contents also.
+           member layout the webpages and put some contents also. We use Bootstrap and custom css to customize the design of bootstrap and also the layout.
           
         </p>
       </div>
