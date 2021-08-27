@@ -112,7 +112,7 @@
         <!-- Button of Download CV -->
         <div class="row">
           <div class="col-lg-12 d-flex align-items-center">
-            <a href="resume/resume.pdf" class="btn px-3 btn-danger me-5">Download CV</a>
+            <a href="resume/Erick Armstrong CV.pdf" class="btn px-3 btn-danger me-5">Download CV</a>
             <div class="social-links">
               <a href="https://www.facebook.com/erico.galileo/" class="text-dark me-2" target="_blank"><i class="fab fa-facebook"></i></a>
               <a href="#" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
@@ -122,6 +122,7 @@
           </div>
         </div>
       </div>
+      
       <!-- Html skill -->
       <div class="col-md-6 mt-5 mt-md-0">
         <div class="skill-item mb-4">  
@@ -139,20 +140,20 @@
             <div class="progress-bar bg-danger" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
-                <!-- Css skill -->
+                <!-- Javascript skill -->
                 <div class="skill-item mb-4">
-                  <h5 class="progress-label">50%</h5>
+                  <h5 class="progress-label">70%</h5>
                   <h3 class="fs-6">Javascript</h3>
                   <div class="progress" style="height: 10px;">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
         <!-- PHP skill -->
         <div class="skill-item mb-4">
-          <h5 class="progress-label">50%</h5>
+          <h5 class="progress-label">70%</h5>
           <h3 class="fs-6">Php</h3>
           <div class="progress" style="height: 10px;">
-            <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
         <!-- PHP skill -->
@@ -272,9 +273,11 @@
     <div class="row">
       <div class="col-md-6 col-lg-4">
         <div class="portfolio-item">
+          <a href="#exampleModalToggle1" class="text-decoration-none text-dark" data-bs-toggle="modal">
           <img src="img/portfolio/1.jpg" class="img-thumbnail" alt="portfolio item" style="height: 25vh;">
           <h3 class="text-capitalize fs-5 my-2">JEG Resources Background</h3>
-          <p>This our background image in our project that i created in the Adobe Illustrator <a href="#exampleModalToggle1" class="text-danger text-decoration-none" data-bs-toggle="modal">Read more...</a></p> 
+          <p>This our background image in our project that i created in the Adobe Illustrator</p> 
+          </a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
@@ -486,34 +489,28 @@
 
       <div class="col-md-7">
         <div class="contact-form">
-          <form action="">
+          <form action="mailto:ericogalileo@gmail.com" method="post" enctype="text/plain">
             <div class="row">
 
               <div class="col-lg-6 mb-4">
-                <input type="text" placeholder="Your Name" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                <input type="text" placeholder="Your Name" name="name" class="form-control form-control-lg fs-6 border-0 shadow-sm">
               </div>
 
               <div class="col-lg-6 mb-4">
-                <input type="text" placeholder="Your Email" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                <input type="text" placeholder="Your Email" name="email" class="form-control form-control-lg fs-6 border-0 shadow-sm">
               </div>
 
             </div>
 
             <div class="row">
               <div class="col-lg-12 mb-4">
-                <input type="text" placeholder="Your Name" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                <textarea rows="5" placeholder="Your Message" name="comment" class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
               </div>
             </div>
 
             <div class="row">
               <div class="col-lg-12 mb-4">
-                <textarea rows="5" placeholder="Your Message" class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-12 mb-4">
-                <button type="submit" class="btn btn-danger px-3">Send Message</button>
+                <input type="submit" type="submit" value="Send Message" class="btn btn-danger px-3">
               </div>
             </div>
 
