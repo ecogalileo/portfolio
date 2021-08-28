@@ -1,543 +1,1006 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <!-- Font-awesome CSS file -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-  <!-- Bootstrap5 CSS file -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  
-    
-  <!-- Custom CSS file -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<style>
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-color: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background-image: none;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Font-awesome CSS file -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- Bootstrap5 CSS file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: red;
-}
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <style>
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 100px;
+      width: 100px;
+      outline: black;
+      background-color: black;
+      background-size: 100%, 100%;
+      border-radius: 50%;
+      border: 1px solid black;
+      background-image: none;
+    }
 
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: red;
-}
-</style>
-<body>
-<!--======================= Navigation Bar =========================================-->
-  <nav class="navbar navbar-light fixed-top bg-transparent shadow-sm">
-    <div class="container-lg">
-      <a href="#" class="navbar-brand text-danger fw-bold fs-4"><i class="fas fa-code"> PORTFOLIO</i></a>
-      <div class="dropdown">
-        <button class="btn btn-secondary btn-danger px-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          <i class="fas fa-bars"></i>
-        </button>
-        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#home">Home</a></li>
-          <li><a class="dropdown-item" href="#about">About</a></li>
-          <li><a class="dropdown-item" href="#services">Services</a></li>
-          <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
-          <li><a class="dropdown-item" href="#contact">Contact</a></li>
-          <li><a class="dropdown-item" href="https://gbgabiola.github.io/jeg-resources/">JEG Resources</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-<!--======================= Navigation Bar End =========================================-->
+    .carousel-control-next-icon:after {
+      content: '>';
+      font-size: 55px;
+      color: red;
+    }
 
-
-<!--======================= Home Section =========================================-->
-<section class="home py-5 img-bg" id="home">
-  <div class="container-lg">
-    <div class="row min-vh-100 align-items-center align-content-center">
-      <div class="col-md-6 mt-5 mt-md-0">
-        <div class="home-img text-center">
-          <img src="img/profile.png" class="rounded-circle mw-100" alt="profile img" width="400" height="400">
+    .carousel-control-prev-icon:after {
+      content: '<';
+      font-size: 55px;
+      color: red;
+    }
+  </style>
+  <body>
+    <!--======================= Navigation Bar =========================================-->
+    <nav class="navbar navbar-light fixed-top bg-transparent shadow-sm">
+      <div class="container-lg">
+        <a href="#" class="navbar-brand text-danger fw-bold fs-4"
+          ><i class="fas fa-code"> PORTFOLIO</i></a
+        >
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary btn-danger px-3"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="dropdownMenuButton1"
+          >
+            <li><a class="dropdown-item" href="#home">Home</a></li>
+            <li><a class="dropdown-item" href="#about">About</a></li>
+            <li><a class="dropdown-item" href="#services">Services</a></li>
+            <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+            <li><a class="dropdown-item" href="#contact">Contact</a></li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://gbgabiola.github.io/jeg-resources/"
+                >JEG Resources</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="col-md-6 mt-5 mt-md-0 order-md-first">
-        <div class="home-text">
-          <p class="text-white fs-4 mb-3 ms-5">Hello I'm</p>
-          <h2 class="text-white fs-2 text-center text-uppercase">Erick Armstrong Galileo</h2>
-          <h1 class="text-danger text-uppercase mb-1 fs-4 fw-bold text-center">Web Developer</h1>
+    </nav>
+    <!--======================= Navigation Bar End =========================================-->
 
-          <p class="mt-4 text-muted text-center"><strong> "The best error message is the one that never shows up." </strong><p class="text-muted text-center"> - Thomas Fuchs</p> </p>
-             <a href="#contact" class="btn btn-danger px-3 mt-2" style="margin-left: 40%;">Hire me</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--======================= Home End =========================================-->
+    <!--======================= Home Section =========================================-->
+    <section class="home py-5 img-bg" id="home">
+      <div class="container-lg">
+        <div class="row min-vh-100 align-items-center align-content-center">
+          <div class="col-md-6 mt-5 mt-md-0">
+            <div class="home-img text-center">
+              <img
+                src="img/profile.png"
+                class="rounded-circle mw-100"
+                alt="profile img"
+                width="400"
+                height="400"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+            <div class="home-text">
+              <p class="text-white fs-4 mb-3 ms-5">Hello I'm</p>
+              <h2 class="text-white fs-2 text-center text-uppercase">
+                Erick Armstrong Galileo
+              </h2>
+              <h1
+                class="text-danger text-uppercase mb-1 fs-4 fw-bold text-center"
+              >
+                Web Developer
+              </h1>
 
-<!--======================= About Section =========================================-->
-<section class="about py-5" id="about">
-  <div class="container-lg py-4">
-    <!-- Title of About me -->
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="section-title text-center">
-          <h2 class="fw-bold mb-5">About Me</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="about-text">
-          <h3 class="fs-4 mb-3">Information</h3>
-          <p class="text-muted">My name is Erick Armstrong Galileo. I was born in Balungao, Pangasinan. I build and design websites for projects and i'am also good in graphic design using Adobe illustrator and Adobe photoshop.
-            For building a website my weapon of choice are Adobe photoshop, Adobe illustrator and Adobe XD for the layout and color combination of the website.
-          </p>
-        </div>
-        <!-- Feedback 1 -->
-
-        <!-- Button of Download CV -->
-        <div class="row">
-          <div class="col-lg-12 d-flex align-items-center">
-            <a href="resume/Erick Armstrong CV.pdf" class="btn px-3 btn-danger me-5">Download CV</a>
-            <div class="social-links">
-              <a href="https://www.facebook.com/erico.galileo/" class="text-dark me-2" target="_blank"><i class="fab fa-facebook"></i></a>
-              <a href="#" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="text-dark me-2"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/erico-galileo-40ab4a218/" class="text-dark me-2" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <p class="mt-4 text-muted text-center">
+                <strong>
+                  "The best error message is the one that never shows up."
+                </strong>
+              </p>
+              <p class="text-muted text-center">- Thomas Fuchs</p>
+              <a
+                href="#contact"
+                class="btn btn-danger px-3 mt-2"
+                style="margin-left: 40%"
+                >Hire me</a
+              >
             </div>
           </div>
         </div>
       </div>
-      
-      <!-- Html skill -->
-      <div class="col-md-6 mt-5 mt-md-0">
-        <div class="skill-item mb-4">  
-          <h5 class="progress-label">90%</h5>
-          <h3 class="fs-6">Html</h3>
-          <div class="progress" style="height: 10px;">
-            <div class="progress-bar bg-danger" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </section>
+    <!--======================= Home End =========================================-->
+
+    <!--======================= About Section =========================================-->
+    <section class="about py-5" id="about">
+      <div class="container-lg py-4">
+        <!-- Title of About me -->
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5">About Me</h2>
+            </div>
           </div>
         </div>
-        <!-- Css skill -->
-        <div class="skill-item mb-4">
-          <h5 class="progress-label">60%</h5>
-          <h3 class="fs-6">Css</h3>
-          <div class="progress" style="height: 10px;">
-            <div class="progress-bar bg-danger" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-text">
+              <h3 class="fs-4 mb-3">Information</h3>
+              <p class="text-muted">
+                A self-motivated Web Developer with strong skill in web design
+                and graphic design. For building a website my weapon of choice
+                are Adobe photoshop, Adobe illustrator and Figma for the layout
+                and color scheme of the website.
+              </p>
+            </div>
+            <!-- Feedback 1 -->
+
+            <!-- Button of Download CV -->
+            <div class="row">
+              <div class="col-lg-12 d-flex align-items-center">
+                <a
+                  href="resume/Erick Armstrong CV.pdf"
+                  class="btn px-3 btn-danger me-5"
+                  >Download CV</a
+                >
+                <div class="social-links">
+                  <a
+                    href="https://www.facebook.com/erico.galileo/"
+                    class="text-dark me-2"
+                    target="_blank"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                  <a href="#" class="text-dark me-2"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" class="text-dark me-2"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/erico-galileo-40ab4a218/"
+                    class="text-dark me-2"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Html skill -->
+          <div class="col-md-6 mt-5 mt-md-0">
+            <div class="skill-item mb-4">
+              <h5 class="progress-label">90%</h5>
+              <h3 class="fs-6">Html</h3>
+              <div class="progress" style="height: 10px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 90%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <!-- Css skill -->
+            <div class="skill-item mb-4">
+              <h5 class="progress-label">60%</h5>
+              <h3 class="fs-6">Css</h3>
+              <div class="progress" style="height: 10px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 60%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <!-- Javascript skill -->
+            <div class="skill-item mb-4">
+              <h5 class="progress-label">70%</h5>
+              <h3 class="fs-6">Javascript</h3>
+              <div class="progress" style="height: 10px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 70%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <!-- PHP skill -->
+            <div class="skill-item mb-4">
+              <h5 class="progress-label">70%</h5>
+              <h3 class="fs-6">Php</h3>
+              <div class="progress" style="height: 10px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 70%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <!-- PHP skill -->
+            <div class="skill-item mb-4">
+              <h5 class="progress-label">80%</h5>
+              <h3 class="fs-6">Photoshop</h3>
+              <div class="progress" style="height: 10px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 80%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
-                <!-- Javascript skill -->
-                <div class="skill-item mb-4">
-                  <h5 class="progress-label">70%</h5>
-                  <h3 class="fs-6">Javascript</h3>
-                  <div class="progress" style="height: 10px;">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </section>
+    <!--======================= About Section End =========================================-->
+
+    <!--======================= Services Section =========================================-->
+    <section class="services py-5 bg-dark" id="services">
+      <div class="container-lg py-4">
+        <!-- Title of what i do -->
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5 text-white">What I do</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <!-- Web Development -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="service-item shadow-sm p-4 rounded bg-white">
+              <div class="icon my-3 text-danger fs-2">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="fs-5 py-2">Web Development</h3>
+              <p class="text-muted">
+                I like to code things from scratch, and enjoy bringing ideas to
+                life in the browser.
+              </p>
+            </div>
+          </div>
+
+          <!-- Creative Design -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="service-item shadow-sm p-4 rounded bg-white">
+              <div class="icon my-3 text-danger fs-2">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h3 class="fs-5 py-2">Creative Design</h3>
+              <p class="text-muted">
+                I value simple content structure, clean design patterns, and
+                thoughtful interactions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Graphic Design -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="service-item shadow-sm p-4 rounded bg-white">
+              <div class="icon my-3 text-danger fs-2">
+                <i class="fas fa-image"></i>
+              </div>
+              <h3 class="fs-5 py-2">Graphic Design</h3>
+              <p class="text-muted">
+                I love creating logo's or vector for the website logo or
+                business logo
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--======================= Services section end =========================================-->
+
+    <!--======================= Portfolio section start =========================================-->
+    <section class="portfolio py-5" id="portfolio">
+      <div class="container-lg py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5">My Projects</h2>
+            </div>
+          </div>
+        </div>
+        <div class="container mb-5" style="width: auto; height: auto">
+          <div
+            id="carouselExampleDark"
+            class="carousel slide mb-5"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="img/portfolio/2.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                  style="height: 70vh"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/portfolio/3.png"
+                  class="d-block w-100"
+                  alt="..."
+                  style="height: 70vh"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/portfolio/5.png"
+                  class="d-block w-100"
+                  alt="..."
+                  style="height: 70vh"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/portfolio/1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                  style="height: 70vh"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/portfolio/4.png"
+                  class="d-block w-100"
+                  alt="..."
+                  style="height: 70vh"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/portfolio/6.png"
+                  class="d-block w-100"
+                  alt="..."
+                  style="height: 70vh"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="bgcolor portfolio-item">
+                <a href="#exampleModalToggle1" data-bs-toggle="modal">
+                  <figure>
+                    <img
+                      src="img/portfolio/1.jpg"
+                      class="hover01 img-thumbnail"
+                      alt="portfolio item"
+                      style="height: 25vh"
+                    />
+                  </figure>
+                  <h3 class="text-capitalize fs-5 my-2">
+                    JEG Resources Background
+                  </h3>
+                  <p>
+                    This our background image in our project that i created in
+                    the Adobe Illustrator
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="bgcolor portfolio-item">
+                <a href="#exampleModalToggle5" data-bs-toggle="modal">
+                  <figure>
+                    <img
+                      src="img/portfolio/5.png"
+                      class="img-thumbnail"
+                      alt="portfolio item"
+                      style="height: 25vh"
+                    />
+                  </figure>
+                  <h3 class="text-capitalize fs-5 my-2">
+                    JEG Resources website
+                  </h3>
+                  <p>Our group project in KODEGO bootcamp</p></a
+                >
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="bgcolor portfolio-item">
+                <a href="#exampleModalToggle3" data-bs-toggle="modal">
+                  <figure>
+                    <img
+                      src="img/portfolio/2.jpg"
+                      class="img-thumbnail"
+                      alt="portfolio item"
+                      style="height: 25vh"
+                    />
+                  </figure>
+                  <h3 class="text-capitalize fs-5 my-2">Vector Art</h3>
+                  <p>This is my second created vector art in photoshop <br /></p
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="bgcolor portfolio-item">
+                <a href="#exampleModalToggle4" data-bs-toggle="modal">
+                  <figure>
+                    <img
+                      src="img/portfolio/3.png"
+                      class="img-thumbnail"
+                      alt="portfolio item"
+                      style="height: 25vh"
+                    />
+                  </figure>
+                  <h3 class="text-capitalize fs-5 my-2">
+                    Our first System project in college days
+                  </h3>
+                  <p>This is our project in the college</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="bgcolor portfolio-item">
+                <a href="#exampleModalToggle2" data-bs-toggle="modal">
+                  <figure>
+                    <img
+                      src="img/portfolio/4.png"
+                      class="img-thumbnail"
+                      alt="portfolio item"
+                      style="height: 25vh; width: 100%"
+                    />
+                  </figure>
+                  <h3 class="text-capitalize fs-5 my-2">Bootstrap grid form</h3>
+                  <p>Our exercise in KODEGO bootcamp</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="bgcolor portfolio-item">
+                <a href="#exampleModalToggle6" data-bs-toggle="modal">
+                  <figure>
+                    <img
+                      src="img/portfolio/6.png"
+                      class="img-thumbnail"
+                      alt="portfolio item"
+                      style="height: 25vh; width: 100%"
+                    />
+                  </figure>
+                  <h3 class="text-capitalize fs-5 my-2">
+                    First project in KODEGO
+                  </h3>
+                  <p>This is my first Project in KODEGO Bootcamp</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="exampleModalToggle1"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel1"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-body"
+            style="margin-left: 10%; margin-right: 8%; margin: auto"
+          >
+            <img
+              src="img/portfolio/1.jpg"
+              class="p-1 w-100 border border-5 border-dark"
+              alt="portfolio item"
+            />
+            <h3 class="text-center text-uppercase fs-1 mt-3 mb-5">
+              jeg resources background image
+            </h3>
+            <p class="text-muted fs-4">
+              This our background image in our project that i created in the
+              Adobe Illustrator. I choose this background color to fit the color
+              combination of our project. This background image is very simple
+              only and it is minimalist to the eyes.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle2"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-body"
+            style="margin-left: 10%; margin-right: 8%; margin: auto"
+          >
+            <img
+              src="img/portfolio/3.png"
+              class="p-1 w-100 border border-5 border-dark"
+              alt="portfolio item"
+            />
+            <h3 class="text-center text-uppercase fs-1 mt-3 mb-5">
+              Our first Web Application project in college days
+            </h3>
+            <p class="text-muted fs-4">
+              We made this project in the college days. this Web Application is
+              called birthing clinic system that stores data patient information
+              the features of this system is adding patient information edit
+              patient information, deleting patient information and reading
+              patient information and also the main page have a log in page. I
+              use Html, Css, Javascript, Jquery, Php and Mysql to create this
+              web application and i use the template of AdminLTE template
+              because it is simple layout and user friendly layout.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle3"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel3"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-body"
+            style="margin-left: 10%; margin-right: 8%; margin: auto"
+          >
+            <img
+              src="img/portfolio/2.jpg"
+              class="p-1 w-100 border border-5 border-dark"
+              alt="portfolio item"
+            />
+            <h3 class="text-center text-uppercase fs-1 mt-3 mb-5">
+              My second Vector art
+            </h3>
+            <p class="text-muted fs-4">
+              This is my second vector art that i created in the photoshop it's
+              good enough for me and this vector art is for my cousin because he
+              request to me to make vector of his face and to post in the social
+              media. This vector art it took me 3 days to finish this vector art
+              because it is hard for me to draw his face using pen tool but it
+              is worth it to me because it is good creation of my vector art.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle4"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel4"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-body"
+            style="margin-left: 10%; margin-right: 8%; margin: auto"
+          >
+            <img
+              src="img/portfolio/4.png"
+              class="p-1 w-100 border border-5 border-dark"
+              alt="portfolio item"
+            />
+            <h3 class="text-center text-uppercase fs-1 mt-3 mb-5">
+              Bootstrap grid form
+            </h3>
+            <p class="text-muted fs-4">
+              This is our exercise in the KODEGO bootcamp. I use bootstrap 5 to
+              create this form and it is require to use bootstrap to create
+              check out form. Bootstrap is easy to layout webpages and easy to
+              design web pages because it is ready made CSS and Javascript.
+            </p>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle5"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel5"
+      tabindex="-1"
+    >
+      <div class="modal-dialog-centered modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-body"
+            style="margin-left: 10%; margin-right: 8%; margin: auto"
+          >
+            <img
+              src="img/portfolio/5.png"
+              class="p-1 w-100 border border-5 border-dark"
+              alt="portfolio item"
+            />
+            <h3 class="text-center text-uppercase fs-1 mt-3 mb-5">
+              JEG Resources website
+            </h3>
+            <p class="text-muted fs-4">
+              This is our project website in the KODEGO bootcamp. I design the
+              website and put some contents and parallax effect of our website
+              and the other member layout the webpages and put some contents
+              also. We use Bootstrap and custom css to customize the design of
+              bootstrap and also the layout.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle6"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel6"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-body"
+            style="margin-left: 10%; margin-right: 8%; margin: auto"
+          >
+            <img
+              src="img/portfolio/6.png"
+              class="p-1 w-100 border border-5 border-dark"
+              alt="portfolio item"
+            />
+            <h3 class="text-center text-uppercase fs-1 mt-3 mb-5">
+              First Individual project in KODEGO
+            </h3>
+            <p class="text-muted fs-4">
+              first individual project in KODEGO. This is our first individual
+              project in KODEGO Bootcamp. I use HTML and CSS to create this
+              because it is require to use this Html and Css and not to use
+              frameworks or template.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--======================= Portfolio section end =========================================-->
+
+    <section class="contact py-5 bg-dark text-white" id="contact">
+      <div class="container-lg py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5">Contact me</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="contact-item d-flex mb-3">
+              <div class="icon fs-4 text-danger">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="text ms-3">
+                <h3 class="fs-5">Email</h3>
+                <p class="text-muted">ericogalileo@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item d-flex mb-3">
+              <div class="icon fs-4 text-danger">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="text ms-3">
+                <h3 class="fs-5">Phone</h3>
+                <p class="text-muted">09559449119</p>
+              </div>
+            </div>
+
+            <div class="contact-item d-flex">
+              <div class="icon fs-4 text-danger">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="text ms-3">
+                <h3 class="fs-5">Address</h3>
+                <p class="text-muted">Balungao, Pangasinan</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <div class="contact-form">
+              <form
+                action="mailto:ericogalileo@gmail.com"
+                method="post"
+                enctype="text/plain"
+              >
+                <div class="row">
+                  <div class="col-lg-6 mb-4">
+                    <input
+                      type="text"
+                      placeholder="Your Name"
+                      name="name"
+                      class="
+                        form-control form-control-lg
+                        fs-6
+                        border-0
+                        shadow-sm
+                      "
+                    />
+                  </div>
+
+                  <div class="col-lg-6 mb-4">
+                    <input
+                      type="text"
+                      placeholder="Your Email"
+                      name="email"
+                      class="
+                        form-control form-control-lg
+                        fs-6
+                        border-0
+                        shadow-sm
+                      "
+                    />
                   </div>
                 </div>
-        <!-- PHP skill -->
-        <div class="skill-item mb-4">
-          <h5 class="progress-label">70%</h5>
-          <h3 class="fs-6">Php</h3>
-          <div class="progress" style="height: 10px;">
-            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <!-- PHP skill -->
-        <div class="skill-item mb-4">
-          <h5 class="progress-label">80%</h5>
-          <h3 class="fs-6">Photoshop</h3>
-          <div class="progress" style="height: 10px;">
-            <div class="progress-bar bg-danger" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--======================= About Section End =========================================-->
 
+                <div class="row">
+                  <div class="col-lg-12 mb-4">
+                    <textarea
+                      rows="5"
+                      placeholder="Your Message"
+                      name="comment"
+                      class="
+                        form-control form-control-lg
+                        fs-6
+                        border-0
+                        shadow-sm
+                      "
+                    ></textarea>
+                  </div>
+                </div>
 
-<!--======================= Services Section =========================================-->
-<section class="services py-5 bg-dark" id="services">
-  <div class="container-lg py-4">
-    <!-- Title of what i do -->
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="section-title text-center">
-          <h2 class="fw-bold mb-5 text-white">What I do</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row text-center">
-      <!-- Web Development -->
-      <div class="col-md-6 col-lg-4 mb-4">
-        <div class="service-item shadow-sm p-4 rounded bg-white">
-          <div class="icon my-3 text-danger fs-2">
-            <i class="fas fa-code"></i>
-          </div>
-          <h3 class="fs-5 py-2">Web Development</h3>
-          <p class="text-muted">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-        </div>
-      </div>
-
-      <!-- Creative Design -->
-      <div class="col-md-6 col-lg-4 mb-4">
-        <div class="service-item shadow-sm p-4 rounded bg-white">
-          <div class="icon my-3 text-danger fs-2">
-            <i class="fas fa-lightbulb"></i>
-          </div>
-          <h3 class="fs-5 py-2">Creative Design</h3>
-          <p class="text-muted">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
-        </div>
-      </div>
-
-      <!-- Graphic Design -->
-      <div class="col-md-6 col-lg-4 mb-4">
-        <div class="service-item shadow-sm p-4 rounded bg-white">
-          <div class="icon my-3 text-danger fs-2">
-            <i class="fas fa-image"></i>
-          </div>
-          <h3 class="fs-5 py-2">Graphic Design</h3>
-          <p class="text-muted">I love creating logo's or vector for the website logo or business logo</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--======================= Services section end =========================================-->
-
-
-<!--======================= Portfolio section start =========================================-->
-<section class="portfolio py-5" id="portfolio">
-  <div class="container-lg py-4">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="section-title text-center">
-          <h2 class="fw-bold mb-5">My Projects</h2>
-        </div>
-      </div>
-    </div>
-    <div class="container mb-5" style="width: auto; height: auto;">
-      <div id="carouselExampleDark" class="carousel slide mb-5" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/portfolio/2.jpg" class="d-block w-100" alt="..." style="height: 70vh;">
-          </div>
-          <div class="carousel-item">
-            <img src="img/portfolio/3.png" class="d-block w-100" alt="..." style="height: 70vh;">
-          </div>
-          <div class="carousel-item">
-            <img src="img/portfolio/5.png" class="d-block w-100" alt="..." style="height: 70vh;">
-          </div>
-          <div class="carousel-item">
-            <img src="img/portfolio/1.jpg" class="d-block w-100" alt="..." style="height: 70vh;">
-          </div>
-          <div class="carousel-item">
-            <img src="img/portfolio/4.png" class="d-block w-100" alt="..." style="height: 70vh;">
-          </div>
-          <div class="carousel-item">
-            <img src="img/portfolio/6.png" class="d-block w-100" alt="..." style="height: 70vh;">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    <div class="row">
-      <div class="col-md-6 col-lg-4">
-        <div class="portfolio-item">
-          <a href="#exampleModalToggle1" class="text-decoration-none text-dark" data-bs-toggle="modal">
-          <img src="img/portfolio/1.jpg" class="img-thumbnail" alt="portfolio item" style="height: 25vh;">
-          <h3 class="text-capitalize fs-5 my-2">JEG Resources Background</h3>
-          <p>This our background image in our project that i created in the Adobe Illustrator</p> 
-          </a>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="portfolio-item">
-          <img src="img/portfolio/5.png" class="img-thumbnail" alt="portfolio item" style="height: 25vh;">
-          <h3 class="text-capitalize fs-5 my-2">JEG Resources website</h3>
-          <p>Our group project in KODEGO bootcamp <a href="#exampleModalToggle5" class="text-danger text-decoration-none" data-bs-toggle="modal">Read more...</a></p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="portfolio-item">
-          <img src="img/portfolio/2.jpg" class="img-thumbnail" alt="portfolio item" style="height: 25vh;">
-          <h3 class="text-capitalize fs-5 my-2">Vector Art</h3>
-          <p>This is my second created vector art in photoshop <br><a href="#exampleModalToggle3" class="text-danger text-decoration-none" data-bs-toggle="modal">Read more...</a></p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="portfolio-item">
-          <img src="img/portfolio/3.png" class="img-thumbnail" alt="portfolio item" style="height: 25vh;">
-          <h3 class="text-capitalize fs-5 my-2">Our first System project in college days</h3>
-          <p>This is our project in the college <a href="#exampleModalToggle2" class="text-danger text-decoration-none" data-bs-toggle="modal">Read more...</a></p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="portfolio-item">
-          <img src="img/portfolio/4.png" class="img-thumbnail" alt="portfolio item" style="height: 25vh; width: 100%;">
-          <h3 class="text-capitalize fs-5 my-2">Bootstrap grid form</h3>
-          <p>Our exercise in KODEGO bootcamp <a href="#exampleModalToggle4" class="text-danger text-decoration-none" data-bs-toggle="modal">Read more...</a></p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="portfolio-item">
-          <img src="img/portfolio/6.png" class="img-thumbnail" alt="portfolio item" style="height: 25vh; width: 100%;">
-          <h3 class="text-capitalize fs-5 my-2">First project in KODEGO</h3>
-          <p>This is my first Project in KODEGO Bootcamp <a href="#exampleModalToggle6" class="text-danger text-decoration-none" data-bs-toggle="modal">Read more...</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1" tabindex="-1">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body" style="margin-left: 10%; margin-right: 8%; margin: auto;">
-        <img src="img/portfolio/1.jpg" class="p-1 w-100 border border-5 border-dark" alt="portfolio item">
-        <h3 class="text-center text-uppercase fs-1 mt-3 mb-5">jeg resources background image</h3>
-        <p class="text-muted fs-4">This our background image in our project that i created in the Adobe Illustrator. I choose this background color to fit the color
-        combination of our project. This background image is very simple only and it is minimalist to the eyes.  </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body" style="margin-left: 10%; margin-right: 8%; margin: auto;">
-        <img src="img/portfolio/3.png" class="p-1 w-100 border border-5 border-dark" alt="portfolio item">
-        <h3 class="text-center text-uppercase fs-1 mt-3 mb-5">Our first Web Application project in college days</h3>
-        <p class="text-muted fs-4">We made this project in the college days. this Web Application is called birthing clinic system that stores data patient information the features of this system is adding patient
-          information edit patient information, deleting patient information and reading patient information and also the main page have a log in page. I use Html, Css, Javascript, Jquery, Php and Mysql
-          to create this web application and i use the template of AdminLTE template because it is simple layout and user friendly layout.
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body" style="margin-left: 10%; margin-right: 8%; margin: auto;">
-        <img src="img/portfolio/2.jpg" class="p-1 w-100 border border-5 border-dark" alt="portfolio item">
-        <h3 class="text-center text-uppercase fs-1 mt-3 mb-5">My second Vector art</h3>
-        <p class="text-muted fs-4">This is my second vector art that i created in the photoshop it's good enough for me and this vector art is for my cousin because he request
-           to me to make vector of his face and to post in the social media. This vector art it took me 3 days to finish this vector art because it is hard for me to draw his
-           face using pen tool but it is worth it to me because it is good creation of my vector art.
-
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel4" tabindex="-1">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body" style="margin-left: 10%; margin-right: 8%; margin: auto;">
-        <img src="img/portfolio/4.png" class="p-1 w-100 border border-5 border-dark" alt="portfolio item">
-        <h3 class="text-center text-uppercase fs-1 mt-3 mb-5">Bootstrap grid form</h3>
-        <p class="text-muted fs-4">This is our exercise in the KODEGO bootcamp. I use bootstrap 5 to create this form and it is require to use bootstrap to create check out form. Bootstrap
-          is easy to layout webpages and easy to design web pages because it is ready made CSS and Javascript.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel5" tabindex="-1">
-  <div class="modal-dialog-centered modal-dialog modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body" style="margin-left: 10%; margin-right: 8%; margin: auto;">
-        <img src="img/portfolio/5.png" class="p-1 w-100 border border-5 border-dark" alt="portfolio item">
-        <h3 class="text-center text-uppercase fs-1 mt-3 mb-5">JEG Resources website</h3>
-        <p class="text-muted fs-4">This is our project website in the KODEGO bootcamp. I design the website and put some contents and parallax effect of our website and the other
-           member layout the webpages and put some contents also. We use Bootstrap and custom css to customize the design of bootstrap and also the layout.
-          
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel6" tabindex="-1">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body" style="margin-left: 10%; margin-right: 8%; margin: auto;">
-        <img src="img/portfolio/6.png" class="p-1 w-100 border border-5 border-dark" alt="portfolio item">
-        <h3 class="text-center text-uppercase fs-1 mt-3 mb-5">First Individual project in KODEGO</h3>
-        <p class="text-muted fs-4">first individual project in KODEGO.
-          This is our first individual project in KODEGO Bootcamp. I use HTML and CSS to create this because it is require to use this Html and Css and not to use frameworks or 
-          template.
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!--======================= Portfolio section end =========================================-->
-
-
-
-<section class="contact py-5 bg-dark text-white" id="contact">
-  <div class="container-lg py-4">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="section-title text-center">
-          <h2 class="fw-bold mb-5">Contact me</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-5">
-
-        <div class="contact-item d-flex mb-3">
-          <div class="icon fs-4 text-danger">
-            <i class="fas fa-envelope"></i>
-          </div>
-          <div class="text ms-3">
-            <h3 class="fs-5">Email</h3>
-            <p class="text-muted">ericogalileo@gmail.com</p>
-          </div>
-        </div>
-
-        <div class="contact-item d-flex mb-3">
-          <div class="icon fs-4 text-danger">
-            <i class="fas fa-phone"></i>
-          </div>
-          <div class="text ms-3">
-            <h3 class="fs-5">Phone</h3>
-            <p class="text-muted">09559449119</p>
-          </div>
-        </div>
-
-        <div class="contact-item d-flex">
-          <div class="icon fs-4 text-danger">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <div class="text ms-3">
-            <h3 class="fs-5">Address</h3>
-            <p class="text-muted">Balungao, Pangasinan</p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="col-md-7">
-        <div class="contact-form">
-          <form action="mailto:ericogalileo@gmail.com" method="post" enctype="text/plain">
-            <div class="row">
-
-              <div class="col-lg-6 mb-4">
-                <input type="text" placeholder="Your Name" name="name" class="form-control form-control-lg fs-6 border-0 shadow-sm">
-              </div>
-
-              <div class="col-lg-6 mb-4">
-                <input type="text" placeholder="Your Email" name="email" class="form-control form-control-lg fs-6 border-0 shadow-sm">
-              </div>
-
+                <div class="row">
+                  <div class="col-lg-12 mb-4">
+                    <input
+                      type="submit"
+                      type="submit"
+                      value="Send Message"
+                      class="btn btn-danger px-3"
+                    />
+                  </div>
+                </div>
+              </form>
             </div>
-
-            <div class="row">
-              <div class="col-lg-12 mb-4">
-                <textarea rows="5" placeholder="Your Message" name="comment" class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-12 mb-4">
-                <input type="submit" type="submit" value="Send Message" class="btn btn-danger px-3">
-              </div>
-            </div>
-
-          </form>
+          </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
-
-
-<footer class="footer border-top py-4">
-  <div class="container-lg">
-    <div class="row">
-      <div class="col-lg-12">
-        <p class="m-0 text-center text-muted">&copy; 2021 Erick Armstrong Galileo</p>
+    <footer class="footer border-top py-4">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="m-0 text-center text-muted">
+              &copy; 2021 Erick Armstrong Galileo
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </footer>
     <!-- ==========Custom CSS file=========== -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="js/bootstrap.bundle.min.js"></script>
-<!-- <div class="container-lg">
+    <!-- <div class="container-lg">
   <div class="row min-vh-100 align-items-center align-content-center">
     <div class="col-md-6">
       <div class="bg-primary">col1</div>
@@ -548,6 +1011,5 @@
   </div>
 </div>
 -->
-
-</body>
+  </body>
 </html>
